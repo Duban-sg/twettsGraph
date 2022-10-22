@@ -1,10 +1,10 @@
 
 from django.urls import include, path
 from rest_framework import routers
-from authApp.views import TweetsViewSet
+from authApp import views
 
 router = routers.DefaultRouter()
-router.register(r'tweets', TweetsViewSet)
+router.register(r'tweets', views.TweetsViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
