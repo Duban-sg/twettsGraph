@@ -5,6 +5,7 @@ from authApp import views
 
 router = routers.DefaultRouter()
 router.register(r'tweets', views.TweetsViewSet)
+router.register(r'followers', views.FollowerViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
