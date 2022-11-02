@@ -1,2 +1,6 @@
 /my_env/
 my_env/
+
+venv/
+venv/*
+
