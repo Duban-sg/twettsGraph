@@ -1,11 +1,12 @@
+import json
+
 import tweepy as tweepy
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-import json
 
-from .tweets import Tweets
-from .followers import Followers
 from .follower_data import FollowerModel
+from .followers import Followers
+from .tweets import Tweets
 
 
 def credentials():

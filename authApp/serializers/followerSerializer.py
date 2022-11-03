@@ -1,6 +1,9 @@
 from dataclasses import fields
+
 from rest_framework import serializers
+
 from authApp.models.followers import Followers
+
 
 class FollowerSerializer(serializers.ModelSerializer):
     class Meta:
