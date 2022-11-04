@@ -14,7 +14,7 @@ class Tweets(models.Model):
     create_at_twett= DateField()
         
     def __str__(self):
-        return self.content
+        return self.title
 
     def get_absolute_url(self):
         return f"/posts/{self.id}"
