@@ -1,5 +1,6 @@
-from django.db.models import Model, AutoField, CharField, EmailField, DateTimeField
 from django.db import models
+from django.db.models import (AutoField, CharField, DateTimeField, EmailField,
+                              Model)
 
 
 class Followers(models.Model):

@@ -94,11 +94,11 @@ password = config("PASSWORD_DB")
 DATABASES = {
    'default': {
         'ENGINE': 'djongo',
+        'NAME': 'TWETTSGRAPH',
         'CLIENT': {
-            'host': 'mongodb+srv://cluster0.lgeb6sa.mongodb.net/?retryWrites=true&w=majority',
+            'host': 'mongodb+srv://cluster0.lgeb6sa.mongodb.net/?retryWrites=true&w=majority&authSource=admin',
             'username': 'dubancsierra',
             'password': password,
-            'authMechanism': 'SCRAM-SHA-1'
         }
     }
 }
