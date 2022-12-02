@@ -90,16 +90,17 @@ WSGI_APPLICATION = 'authProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 password = config("PASSWORD_DB")
+user_name = config("USERNAME_DB")
 
 DATABASES = {
    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'TWETTSGRAPH',
-        'CLIENT': {
-            'host': 'mongodb+srv://cluster0.lgeb6sa.mongodb.net/?retryWrites=true&w=majority&authSource=admin',
-            'username': 'dubancsierra',
-            'password': password,
-        }
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'modelosteam',
+        'USER': user_name,
+        'PASSWORD': password,
+        'HOST': 'twittermodelo.mysql.database.azure.com',
+        'PORT': '3306',
+        'OPTIONS': {'ssl': {"fake_flag_to_enable_tls":True}}
     }
 }
 
