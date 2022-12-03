@@ -100,7 +100,11 @@ DATABASES = {
         'PASSWORD': password,
         'HOST': 'twittermodelo.mysql.database.azure.com',
         'PORT': '3306',
-        'OPTIONS': {'ssl': {"fake_flag_to_enable_tls":True}}
+        'OPTIONS': {'ssl': {"fake_flag_to_enable_tls":True}, "charset": "utf8mb4"},
+        "TEST": {
+            "CHARSET": "utf8mb4",
+            "COLLATION": "utf8mb4_unicode_ci",
+        },
     }
 }
 
